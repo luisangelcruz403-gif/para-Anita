@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ana 💜</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Georgia, serif;
+            background: #000000;
+            overflow: hidden;
+        }
+
+        /* Corazones del fondo */
+        .heart {
+            position: fixed;
+            color: #661e96;
+            font-size: 37px;
+            animation: subir 8s linear infinite;
+            opacity: 0;
+        }
+
+        .heart:nth-child(1) { left: 10%; animation-delay: 1s; }
+        .heart:nth-child(2) { left: 30%; animation-delay: 3s; }
+        .heart:nth-child(3) { left: 50%; animation-delay: 0s; }
+        .heart:nth-child(4) { left: 70%; animation-delay: 2s; }
+        .heart:nth-child(5) { left: 90%; animation-delay: 4s; }
+
+        @keyframes subir {
+            0% {
+                bottom: -50px;
+                opacity: 0;
+                transform: translateX(0);
+            }
+
+            20% {
+                opacity: 0.8;
+            }
+
+            100% {
+                bottom: 110%;
+                opacity: 0;
+                transform: translateX(50px);
+            }
+        }
+
+        /* Carta */
+        .carta {
+            position: relative;
+            width: 90%;
+            max-width: 650px;
+            padding: 45px;
+            background: #060508;
+            border: 1px solid #926bc5;
+            border-radius: 18px;
+            box-shadow: 0 0 40px rgba(159, 114, 233, 0.25);
+            color: #eee;
+            animation: aparecer 1.5s ease;
+            
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #6652ad;
+            font-size: 42px;
+            margin-top: 0;
+        }
+
+        .corazon {
+            text-align: center;
+            font-size: 50px;
+            animation: latir 1.5s infinite;
+        }
+
+        @keyframes latir {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .firma {
+            text-align: right;
+            margin-top: 30px;
+            font-size: 20px;
+            color: #739745;
+        }
+
+        .fecha {
+            text-align: center;
+            color: #9900ff;
+            margin-top: 25px;
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Corazones flotando -->
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+
+    <!-- Carta -->
+    <div class="carta">
+
+        <div class="corazon">💜</div>
+
+        <h1>Para Anita</h1>
+
+        <p>
+            Ana me gustaria decirte esto en persona aunque a veces 
+            no tengo el valor de decirtelo.
+        </p>
+
+        <p>
+            Desde que te conocí pude ver en ti y en tus ojos algo que nunca
+            habia visto, el amor no creo que haya otra palabra que pueda representar
+            lo que vi.
+        </p>
+
+        <p>
+            No sé exactamente qué vaya a pasar entre nosotros,
+            pero lo que si se es que quiero estar contigo siempre, esa es mi volundad
+            .
+        </p>
+
+        <p>
+            Gracias por darme una oportunidad de estar contigo siento que no me lo merezco
+            pero estoy agradecido por esto, estoy agradecido por formar parte de tu vida.
+        </p>
+
+        <p>
+             recuerda que te quiero 💜.
+        </p>
+
+        <p>
+             atentamente:
+        </p>
+
+        <div class="firma">
+            Xlac
+        </div>
+
+        <div class="fecha">
+            Hecho especialmente para Ana
+        </div>
+
+    </div>
+
+</body>
+</html>
